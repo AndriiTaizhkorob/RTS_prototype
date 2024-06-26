@@ -7,7 +7,8 @@ public class CharacterMovement : MonoBehaviour
 {
     public float moveSpeed = 1;
 
-    public Camera camera;
+    public new Camera camera;
+
     Vector3 currentPosition;
 
     public Vector3 targetPosition;
@@ -15,6 +16,7 @@ public class CharacterMovement : MonoBehaviour
     void Start()
     {
         currentPosition = transform.position;
+        targetPosition = transform.position;
     }
 
     void Update()
