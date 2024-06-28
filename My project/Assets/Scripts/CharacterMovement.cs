@@ -13,21 +13,50 @@ public class CharacterMovement : MonoBehaviour
 
     public Vector3 targetPosition;
 
+    public bool isControled, isMoving;
+
     void Start()
     {
+        camera = GameObject.FindObjectOfType<Camera>();
+
         currentPosition = transform.position;
         targetPosition = transform.position;
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
-            CheckMouse();
+            Activation();
         }
-        Moving();
+
+        if (isControled == true)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                CheckMouse();
+            }
+            Moving(targetPosition);
+        }
     }
 
+    void Activation()
+    {
+        RaycastHit hit;
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.transform == gameObject.transform)
+            {
+                isControled = true;
+            }
+            else 
+            { 
+                isControled = false;
+            }
+        }
+    }
 
     public void CheckMouse()
     {
@@ -39,11 +68,22 @@ public class CharacterMovement : MonoBehaviour
             targetPosition = hit.point;
         }
     }
-    private void Moving()
+    public void Moving(Vector3 enemyPosition)
     {
-        Vector3 lerpPosition = Vector3.MoveTowards(currentPosition, targetPosition, Time.deltaTime * moveSpeed);
-        currentPosition = lerpPosition;
+        if (currentPosition != targetPosition)
+        {
+            isMoving = true;
+            gameObject.GetComponent<PlayerBehaviour>().Inconsistency(isMoving);
+        }
+        else if (currentPosition == targetPosition)
+        { 
+            isMoving = false;
+            targetPosition = enemyPosition;
+        }
 
-        transform.position = new Vector3(lerpPosition.x, transform.position.y, lerpPosition.z);
+        Vector3 newPosition = Vector3.MoveTowards(currentPosition, targetPosition, Time.deltaTime * moveSpeed);
+        currentPosition = newPosition;
+
+        transform.position = new Vector3(newPosition.x, transform.position.y, newPosition.z);
     }
 }

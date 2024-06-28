@@ -36,6 +36,7 @@ public class NewBehaviourScript : MonoBehaviour
         transform.LookAt(targetPosition);
         cooldown -= Time.deltaTime;
 
+        //Identifies the nearest player in sight.
         if (Physics.CheckSphere(currentPosition, sightDistance)) 
         {
             allPlayers = GameObject.FindGameObjectsWithTag("Player");
@@ -73,6 +74,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
     }
 
+    //Movment of the unit. 
     private void Moving()
     {
         Vector3 lerpPosition = Vector3.MoveTowards(currentPosition, targetPosition, Time.deltaTime * moveSpeed);
@@ -81,6 +83,8 @@ public class NewBehaviourScript : MonoBehaviour
         transform.position = new Vector3(lerpPosition.x, transform.position.y, lerpPosition.z);
     }
 
+
+    //Attack of the unit
     private void Attacking()
     {
         nearestPlayer.GetComponent<Health>().DealDamage(damage);
