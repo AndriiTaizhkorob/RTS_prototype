@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public LayerMask Enemy;
+    public LayerMask enemy;
 
     public GameObject nearestEnemy;
     public GameObject[] allEnemys;
 
     public float sightDistance = 8f;
     public float attackDistance = 5f;
-    public float damage = 20f;
+    public float damage = 20;
     public float cooldown = 0f;
     public float cooldownTime = 2f;
 
@@ -35,7 +35,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         cooldown -= Time.deltaTime;
 
-        //Identifies the nearest enemy in sight.
+        //Identifies the nearest enemy in sight and updates the list.
         if (Physics.CheckSphere(currentPos, sightDistance))
         {
             allEnemys = GameObject.FindGameObjectsWithTag("Enemy");
@@ -54,11 +54,13 @@ public class PlayerBehaviour : MonoBehaviour
             }
         }
 
-        targetPos= nearestEnemy.transform.position;
+        targetPos = nearestEnemy.transform.position;
 
-        inSightRange = Physics.CheckSphere(currentPos, sightDistance, Enemy);
-        inAttackRange = Physics.CheckSphere(currentPos, attackDistance, Enemy);
+        //Check of player's unit presence.
+        inSightRange = Physics.CheckSphere(currentPos, sightDistance, enemy);
+        inAttackRange = Physics.CheckSphere(currentPos, attackDistance, enemy);
 
+        //Behaviour conditions
         if (inSightRange && !inAttackRange && !present)
         {
             gameObject.GetComponent<CharacterMovement>().Moving(enemyPosition);
@@ -69,20 +71,20 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-    //Inconsistency check
+    //Inconsistency check.
     public void Inconsistency(bool isMoving) 
     {
         present = isMoving;
     }
 
-    //Getting needed data form other script
+    //Getting needed data form CharacterMovement.
     public void PositionData(Vector3 currentPosition, Vector3 targetPosition)
     {
         currentPos = currentPosition;
         targetPos = targetPosition;
     }
 
-    //Attack of the unit
+    //Attack of the enemy unit
     private void Attacking()
     {
         nearestEnemy.GetComponent<Health>().DealDamage(damage);

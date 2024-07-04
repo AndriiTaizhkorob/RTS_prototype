@@ -21,6 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     private Vector3 currentPosition;
     private Vector3 targetPosition;
+    private Vector3 lookDirection;
 
     public bool inSightRange, inAttackRange;
 
@@ -33,10 +34,13 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Update()
     {
-        transform.LookAt(targetPosition);
+        lookDirection = new Vector3(targetPosition.x, 1, targetPosition.z);
+
+        transform.LookAt(lookDirection);
+
         cooldown -= Time.deltaTime;
 
-        //Identifies the nearest player in sight.
+        //Identifies the nearest player's units in sight and updates their list.
         if (Physics.CheckSphere(currentPosition, sightDistance)) 
         {
             allPlayers = GameObject.FindGameObjectsWithTag("Player");
@@ -57,9 +61,11 @@ public class NewBehaviourScript : MonoBehaviour
 
         targetPosition = nearestPlayer.transform.position;
 
+        //Check of player's unit presence.
         inSightRange = Physics.CheckSphere(currentPosition, sightDistance, Player);
         inAttackRange = Physics.CheckSphere(currentPosition, attackDistance, Player);
 
+        //Behaviour conditions
         if (inSightRange && !inAttackRange) 
         {
             Moving();
@@ -74,7 +80,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
     }
 
-    //Movment of the unit. 
+    //Movment behaviour. 
     private void Moving()
     {
         Vector3 lerpPosition = Vector3.MoveTowards(currentPosition, targetPosition, Time.deltaTime * moveSpeed);
@@ -83,8 +89,7 @@ public class NewBehaviourScript : MonoBehaviour
         transform.position = new Vector3(lerpPosition.x, transform.position.y, lerpPosition.z);
     }
 
-
-    //Attack of the unit
+    //Attack behaviour.
     private void Attacking()
     {
         nearestPlayer.GetComponent<Health>().DealDamage(damage);

@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -9,15 +12,22 @@ public class CharacterMovement : MonoBehaviour
 
     public new Camera camera;
 
-    Vector3 currentPosition;
+    private Vector3 currentPosition;
+    private Vector3 lookDirection;
 
     public Vector3 targetPosition;
 
     public bool isControled, isMoving;
 
+    public string unitName, unitHP, unitCooldown;
+
+    private new GameObject reciver;
+
     void Start()
     {
         camera = GameObject.FindObjectOfType<Camera>();
+
+        reciver = GameObject.Find("IngameUI");
 
         currentPosition = transform.position;
         targetPosition = transform.position;
@@ -25,9 +35,32 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
+        lookDirection = new Vector3(targetPosition.x, 1, targetPosition.z);
+
+        transform.LookAt(lookDirection);
+
+        gameObject.GetComponent<PlayerBehaviour>().PositionData(currentPosition, targetPosition);
+
         if (Input.GetMouseButtonDown(0))
         {
             Activation();
+        }
+
+        if (isControled)
+        {
+            unitName = gameObject.name;
+            unitHP = "Health: " + gameObject.GetComponent<Health>().health;
+
+            if (gameObject.GetComponent<PlayerBehaviour>().cooldown > 0)
+            {
+                unitCooldown = "Cooldown: " + Math.Round(gameObject.GetComponent<PlayerBehaviour>().cooldown);
+            }
+            else
+            {
+                unitCooldown = "Cooldown: Ready";
+            }
+
+            reciver.GetComponent<UnitInfo>().reciveInfo(unitName, unitHP, unitCooldown);
         }
 
         if (isControled == true)
@@ -73,13 +106,15 @@ public class CharacterMovement : MonoBehaviour
         if (currentPosition != targetPosition)
         {
             isMoving = true;
-            gameObject.GetComponent<PlayerBehaviour>().Inconsistency(isMoving);
         }
         else if (currentPosition == targetPosition)
         { 
             isMoving = false;
             targetPosition = enemyPosition;
         }
+
+        gameObject.GetComponent<PlayerBehaviour>().Inconsistency(isMoving);
+
 
         Vector3 newPosition = Vector3.MoveTowards(currentPosition, targetPosition, Time.deltaTime * moveSpeed);
         currentPosition = newPosition;

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public float health = 100;
+    public int result;
 
     void Start()
     {
@@ -15,7 +16,24 @@ public class Health : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            if (gameObject.name == "EnemyMainBase")
+            {
+                result = 1;
+                GetComponent<EventsAndInteractions>().victory(result);
+                Destroy(gameObject);
+            }
+            else if(gameObject.name == "MainBase")
+            {
+                result = 2;
+                GetComponent<EventsAndInteractions>().victory(result);
+                Destroy(gameObject);
+            }
+
+            else
+            {
+                Destroy(gameObject);
+            }
+            
         }
     }
 
