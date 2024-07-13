@@ -7,9 +7,11 @@ public class Health : MonoBehaviour
     public float health = 100;
     public int result;
 
+    public GameObject judge;
+
     void Start()
     {
-        
+        judge = GameObject.Find("EventManager");
     }
 
     void Update()
@@ -19,13 +21,13 @@ public class Health : MonoBehaviour
             if (gameObject.name == "EnemyMainBase")
             {
                 result = 1;
-                GetComponent<EventsAndInteractions>().victory(result);
+                judge.GetComponent<EventsAndInteractions>().victory(result);
                 Destroy(gameObject);
             }
-            else if(gameObject.name == "MainBase")
+            else if(gameObject.name == "PlayerMainBase")
             {
                 result = 2;
-                GetComponent<EventsAndInteractions>().victory(result);
+                judge.GetComponent<EventsAndInteractions>().victory(result);
                 Destroy(gameObject);
             }
 

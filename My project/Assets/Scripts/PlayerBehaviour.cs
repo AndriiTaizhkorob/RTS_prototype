@@ -21,10 +21,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public bool inSightRange, inAttackRange, present;
 
-    public Vector3 enemyPosition;
-
-    private Vector3 currentPos;
-    private Vector3 targetPos;
+    public Vector3 targetPos, currentPos, lookDirection;
 
     void Start()
     {
@@ -34,6 +31,8 @@ public class PlayerBehaviour : MonoBehaviour
     void Update()
     {
         cooldown -= Time.deltaTime;
+
+        lookDirection = new Vector3(targetPos.x, 1, targetPos.z);
 
         //Identifies the nearest enemy in sight and updates the list.
         if (Physics.CheckSphere(currentPos, sightDistance))
@@ -54,18 +53,22 @@ public class PlayerBehaviour : MonoBehaviour
             }
         }
 
-        targetPos = nearestEnemy.transform.position;
-
-        //Check of player's unit presence.
+        //Check of enemys's unit presence.
         inSightRange = Physics.CheckSphere(currentPos, sightDistance, enemy);
         inAttackRange = Physics.CheckSphere(currentPos, attackDistance, enemy);
 
-        //Behaviour conditions
-        if (inSightRange && !inAttackRange && !present)
+        
+        if (inSightRange)
         {
-            gameObject.GetComponent<CharacterMovement>().Moving(enemyPosition);
+            transform.LookAt(nearestEnemy.transform.position);
         }
-        else if (inSightRange && inAttackRange && cooldown <= 0 && !present)
+        else
+        {
+            transform.LookAt(lookDirection);
+        }
+
+        //Behaviour conditions
+        if (inSightRange && inAttackRange && cooldown <= 0 && !present)
         {
             Attacking();
         }

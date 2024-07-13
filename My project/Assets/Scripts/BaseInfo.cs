@@ -9,7 +9,7 @@ public class BaseInfo : MonoBehaviour
 
     public string unitName, unitHP, unitCooldown;
 
-    private new GameObject reciver;
+    private GameObject reciver;
 
     public bool isControled;
 

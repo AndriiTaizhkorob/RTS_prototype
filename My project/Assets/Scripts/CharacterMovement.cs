@@ -12,16 +12,13 @@ public class CharacterMovement : MonoBehaviour
 
     public new Camera camera;
 
-    private Vector3 currentPosition;
-    private Vector3 lookDirection;
-
-    public Vector3 targetPosition;
+    public Vector3 currentPosition, targetPosition;
 
     public bool isControled, isMoving;
 
     public string unitName, unitHP, unitCooldown;
 
-    private new GameObject reciver;
+    private GameObject reciver;
 
     void Start()
     {
@@ -35,10 +32,6 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
-        lookDirection = new Vector3(targetPosition.x, 1, targetPosition.z);
-
-        transform.LookAt(lookDirection);
-
         gameObject.GetComponent<PlayerBehaviour>().PositionData(currentPosition, targetPosition);
 
         if (Input.GetMouseButtonDown(0))
@@ -69,7 +62,7 @@ public class CharacterMovement : MonoBehaviour
             {
                 CheckMouse();
             }
-            Moving(targetPosition);
+            Moving();
         }
     }
 
@@ -101,7 +94,7 @@ public class CharacterMovement : MonoBehaviour
             targetPosition = hit.point;
         }
     }
-    public void Moving(Vector3 enemyPosition)
+    public void Moving()
     {
         if (currentPosition != targetPosition)
         {
@@ -109,8 +102,7 @@ public class CharacterMovement : MonoBehaviour
         }
         else if (currentPosition == targetPosition)
         { 
-            isMoving = false;
-            targetPosition = enemyPosition;
+            isMoving = false;  
         }
 
         gameObject.GetComponent<PlayerBehaviour>().Inconsistency(isMoving);

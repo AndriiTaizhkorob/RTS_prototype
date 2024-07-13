@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
 
     public string unitName, unitHP, unitCooldown;
 
-    private new GameObject reciver;
+    private GameObject reciver;
 
     void Start()
     {
