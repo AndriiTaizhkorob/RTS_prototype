@@ -3,44 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\rts_prototype\\my project\\assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\rts_prototype\\my project\\assets\\scripts\\winsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\winsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\eventsandinteractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\rts_prototype\\my project\\assets\\scripts\\eventsandinteractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\eventsandinteractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\rts_prototype\\my project\\assets\\scripts\\losesound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\losesound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\ui\\wincondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\wincondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\ui\\loosecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\loosecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\timeofday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timeofday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\baseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\baseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\ui\\loosecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\loosecondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\baseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\baseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\timeofday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timeofday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\assets\\scripts\\ui\\unitinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,45 +62,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LooseCondition.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\UI\\LooseCondition.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\LooseCondition.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\UI\\LooseCondition.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\LooseCondition.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T21:29:39.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "WinCondition.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\UI\\WinCondition.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\WinCondition.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\UI\\WinCondition.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\WinCondition.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "LoseSound.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\LoseSound.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LoseSound.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\LoseSound.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LoseSound.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T21:29:36.43Z",
+              "WhenOpened": "2024-07-14T13:47:37.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Health.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\Health.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Health.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\Health.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Health.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Title": "WinSound.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\WinSound.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WinSound.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\WinSound.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WinSound.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:26:54.116Z",
+              "WhenOpened": "2024-07-14T13:47:36.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LooseCondition.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\UI\\LooseCondition.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\LooseCondition.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\UI\\LooseCondition.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\LooseCondition.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T21:29:39.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WinCondition.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\UI\\WinCondition.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\WinCondition.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\UI\\WinCondition.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\WinCondition.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T21:29:36.43Z",
               "EditorCaption": ""
             },
             {
@@ -103,14 +123,26 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\EventsAndInteractions.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\EventsAndInteractions.cs",
               "RelativeToolTip": "Assets\\Scripts\\EventsAndInteractions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-03T20:19:32.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "Health.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Health.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\Health.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Health.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T21:26:54.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "BaseInfo.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\BaseInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BaseInfo.cs",
@@ -118,51 +150,47 @@
               "RelativeToolTip": "Assets\\Scripts\\BaseInfo.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwDkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T19:42:16.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-03T19:42:16.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CharacterMovement.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\CharacterMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterMovement.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\CharacterMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\CharacterMovement.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEsAAAAQAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAA1wEAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T09:09:59.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T09:09:59.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "PlayerBehaviour.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\PlayerBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBehaviour.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\PlayerBehaviour.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerBehaviour.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAMwEIAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T10:27:38.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T10:27:38.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "EnemyMovement.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\EnemyMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyMovement.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\EnemyMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyMovement.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAGYAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:15:46.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T21:15:46.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UnitInfo.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\UI\\UnitInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UnitInfo.cs",
@@ -174,20 +202,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Spawner.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\Spawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\Spawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spawner.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAALAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowEwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T14:17:32.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-03T14:17:32.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "TimeOfDay.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\RTS_prototype\\My project\\Assets\\Scripts\\TimeOfDay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TimeOfDay.cs",
@@ -195,8 +222,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TimeOfDay.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T10:32:59.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-03T10:32:59.181Z"
             }
           ]
         }

@@ -62,8 +62,8 @@ public class CharacterMovement : MonoBehaviour
             {
                 CheckMouse();
             }
-            Moving();
         }
+        Moving();
     }
 
     void Activation()

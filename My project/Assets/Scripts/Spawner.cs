@@ -16,6 +16,7 @@ public class Spawner : MonoBehaviour
     private Vector3 spawnPosition;
 
     public GameObject child1;
+    AudioSource spawn;
 
     public string unitName, unitHP, unitCooldown;
 
@@ -28,8 +29,9 @@ public class Spawner : MonoBehaviour
         reciver = GameObject.Find("IngameUI");
 
         camera = GameObject.FindObjectOfType<Camera>();
+        spawn = gameObject.GetComponent<AudioSource>();
 
-        spawnCooldown = spawnTime;
+    spawnCooldown = spawnTime;
         spawnPosition = new Vector3(transform.position.x, 1f, transform.position.z - 2f);
     }
 
@@ -72,6 +74,7 @@ public class Spawner : MonoBehaviour
 
     public void spawnGunner()
     {
+        spawn.Play();
         Instantiate(gunnerPrefab[0], spawnPosition, transform.rotation);
         spawnCooldown = spawnTime;
     }

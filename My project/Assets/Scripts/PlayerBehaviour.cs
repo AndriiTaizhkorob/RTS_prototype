@@ -7,8 +7,10 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public LayerMask enemy;
 
-    public GameObject nearestEnemy;
+    public GameObject nearestEnemy, particleEffect;
     public GameObject[] allEnemys;
+    ParticleSystem fireEffect;
+    AudioSource gunShot;
 
     public float sightDistance = 8f;
     public float attackDistance = 5f;
@@ -26,6 +28,11 @@ public class PlayerBehaviour : MonoBehaviour
     void Start()
     {
         cooldown = cooldownTime;
+
+        particleEffect = gameObject.transform.GetChild(0).gameObject;
+
+        fireEffect = particleEffect.GetComponent<ParticleSystem>();
+        gunShot = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -90,6 +97,8 @@ public class PlayerBehaviour : MonoBehaviour
     //Attack of the enemy unit
     private void Attacking()
     {
+        fireEffect.Play();
+        gunShot.Play();
         nearestEnemy.GetComponent<Health>().DealDamage(damage);
         cooldown = cooldownTime;
     }

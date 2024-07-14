@@ -6,8 +6,10 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public LayerMask Player;
 
-    public GameObject nearestPlayer;
+    public GameObject nearestPlayer, particleEffect;
     public GameObject[] allPlayers;
+    ParticleSystem fireEffect;
+    AudioSource gunShot;
 
     public float moveSpeed = 1f;
     public float sightDistance = 8f;
@@ -30,6 +32,11 @@ public class NewBehaviourScript : MonoBehaviour
         currentPosition = transform.position;
         targetPosition = transform.position;
         cooldown = cooldownTime;
+
+        particleEffect = gameObject.transform.GetChild(0).gameObject;
+
+        fireEffect = particleEffect.GetComponent<ParticleSystem>();
+        gunShot = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -92,6 +99,8 @@ public class NewBehaviourScript : MonoBehaviour
     //Attack behaviour.
     private void Attacking()
     {
+        fireEffect.Play();
+        gunShot.Play();
         nearestPlayer.GetComponent<Health>().DealDamage(damage);
         cooldown = cooldownTime;
     }
